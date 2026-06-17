@@ -2,9 +2,8 @@
   "expo": {
     "name": "Ranbit",
     "slug": "ranbit",
-    "version": "0.1.0-alpha",
+    "version": "0.1.1-alpha",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
     "scheme": "ranbit",
     "userInterfaceStyle": "light",
     "ios": {
