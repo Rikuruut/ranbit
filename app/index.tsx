@@ -108,7 +108,7 @@ export default function StartScreen() {
     <Animated.View style={[styles.screen, screenFadeStyle]}>
       {/* ── 背景画像 ── */}
       <Image
-        source={require("../assets/images/start_screen2.webp")}
+        source={require("../assets/images/start_screen.webp")}
         style={styles.bgImage}
         resizeMode="cover"
       />

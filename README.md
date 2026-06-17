@@ -1,50 +1,33 @@
-# Welcome to your Expo app 👋
+# Ranbit
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Ranbitは、終了時間がランダムに変化する習慣化タイマーアプリです。  
+「Random + Habit」をコンセプトに、ユーザーが少し楽しく習慣を続けられる体験を目指しています。
 
-## Get started
+## 概要
 
-1. Install dependencies
+- 最大時間を設定すると、25%〜100%の間でランダムにタイマーが終了する
+- 作業中にフィーバータイムが発生し、タイマーが加速する
+- 達成によって経験値やニンジンを獲得できる
+- ニンジンを使って背景や着せ替えアイテムを交換できる
 
-   ```bash
-   npm install
-   ```
+## 世界観
 
-2. Start the app
+Ranbitには、うさぎの「ランビィ」と時計の妖精「ティクル」が登場します。  
+詳しい世界観は `docs/world.md` を参照してください。
 
-   ```bash
-   npx expo start
-   ```
+## 技術スタック
 
-In the output, you'll find options to open the app in a
+- Expo SDK 54
+- React Native
+- TypeScript
+- expo-router
+- react-native-reanimated
+- react-native-worklets
+- AsyncStorage
+- Zustand
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## セットアップ
 
 ```bash
-npm run reset-project
+npm install
 ```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
