@@ -2,7 +2,7 @@
   "expo": {
     "name": "Ranbit",
     "slug": "ranbit",
-    "version": "0.1.1-alpha",
+    "version": "0.1.2-alpha",
     "orientation": "portrait",
     "scheme": "ranbit",
     "userInterfaceStyle": "light",
@@ -19,11 +19,7 @@
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
-    "plugins": [
-      "expo-router",
-      "expo-audio",
-      "expo-asset"
-    ],
+    "plugins": ["expo-router"],
     "experiments": {
       "typedRoutes": true
     }
