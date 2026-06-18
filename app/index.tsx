@@ -29,12 +29,13 @@ import { FONTS } from "../src/theme";
 // ─────────────────────────────────────────────
 
 // バージョン表記
-const APP_VERSION = "ver0.1.2-alpha";
+const APP_VERSION = "ver0.1.3-alpha";
 const MIN_DISPLAY_MS = 2500;
 const { height: SCREEN_H } = Dimensions.get("window");
 
 export default function StartScreen() {
   const insets = useSafeAreaInsets();
+  const titleTopPadding = Math.max(insets.top + 24, 60);
   const loadUserData = useAppStore((s: any) => s.loadUserData);
 
   // ── 遷移制御 ──
@@ -119,7 +120,7 @@ export default function StartScreen() {
       </Text>
 
       {/* ── タイトルグループ(中央) ── */}
-      <View style={styles.content}>
+      <View style={[styles.content, { paddingTop: titleTopPadding }]}>
         <View style={styles.titleGroup}>
           <Animated.Text style={[styles.furigana, furiganaStyle]}>
             らんびっと
@@ -153,17 +154,17 @@ const styles = StyleSheet.create({
   content: {
     flex: 1,
     alignItems: "center",
-    paddingTop: 80,
   },
 
   // ── タイトル ──
   titleGroup: {
     alignItems: "center",
-    gap: 2,
+    gap: 0,
   },
   furigana: {
     fontFamily: FONTS.display,
     fontSize: 24,
+    marginBottom: -1,
     letterSpacing: 8,
     color: "#F5DEB3",
     textShadowColor: "rgba(245, 222, 179, 0.4)",

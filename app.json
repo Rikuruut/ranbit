@@ -2,7 +2,7 @@
   "expo": {
     "name": "Ranbit",
     "slug": "ranbit",
-    "version": "0.1.2-alpha",
+    "version": "0.1.3-alpha",
     "orientation": "portrait",
     "scheme": "ranbit",
     "userInterfaceStyle": "light",
