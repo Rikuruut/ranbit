@@ -2,6 +2,7 @@ import { Tabs } from 'expo-router';
 import { useEffect } from 'react';
 import { Platform, Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, {
+  Easing,
   useAnimatedStyle,
   useSharedValue,
   withSpring,
@@ -37,8 +38,14 @@ function TabBarItem({ tab, isFocused, onPress }: {
 
   useEffect(() => {
     highlightProgress.value = isFocused
-      ? withSpring(1, { damping: 12, stiffness: 220 })
-      : withTiming(0, { duration: 120 });
+      ? withTiming(1, {
+          duration: 180,
+          easing: Easing.out(Easing.cubic),
+        })
+      : withTiming(0, {
+          duration: 120,
+          easing: Easing.in(Easing.cubic),
+        });
   }, [isFocused]);
 
   return (
